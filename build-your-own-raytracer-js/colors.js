@@ -1,20 +1,20 @@
 class Color{
-    constructor(r,g,b) {
-        this.r = r;
-        this.g = g;
-        this.b = b;
+    constructor(red, green, blue) {
+        this.r = red;
+        this.g = green;
+        this.b = blue;
     }
 
-    add(other) {
-      return new Color(this.r + other.r, this.g + other.g, this.b + other.b);
+    add(otherColor) {
+      return new Color(this.r + otherColor.r, this.g + otherColor.g, this.b + otherColor.b);
     }
 
-    multiply(other) {
-      return new Color(this.r * other.r, this.g * other.g, this.b * other.b);
+    multiply(otherColor) {
+      return new Color(this.r * otherColor.r, this.g * otherColor.g, this.b * otherColor.b);
     }
 
-    scale(s) {
-      return new Color(this.r * s, this.g * s, this.b * s);
+    scale(scalar) {
+      return new Color(this.r * scalar, this.g * scalar, this.b * scalar);
     }
 
     toString() {

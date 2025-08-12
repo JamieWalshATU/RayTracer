@@ -1,24 +1,24 @@
 class Vector{
-    constructor(x,y,z) {
+    constructor(x, y, z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
 
-    scale(s) {
-    return new Vector(this.x * s, this.y * s, this.z * s);
+    scale(scalar) {
+    return new Vector(this.x * scalar, this.y * scalar, this.z * scalar);
   }
 
-  add(other) {
-    return new Vector(this.x + other.x, this.y + other.y, this.z + other.z);
+  add(otherVector) {
+    return new Vector(this.x + otherVector.x, this.y + otherVector.y, this.z + otherVector.z);
   }
 
-  subtract(other) {
-    return new Vector(this.x - other.x, this.y - other.y, this.z - other.z);
+  subtract(otherVector) {
+    return new Vector(this.x - otherVector.x, this.y - otherVector.y, this.z - otherVector.z);
   }
 
-  dot(other) {
-    return this.x * other.x + this.y * other.y + this.z * other.z;
+  dot(otherVector) {
+    return this.x * otherVector.x + this.y * otherVector.y + this.z * otherVector.z;
   }
   
   magnitude() {

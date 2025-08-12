@@ -1,8 +1,8 @@
 class Material {
-    constructor(ka,kd,kg,a) {
-        this.ka = ka;
-        this.kd = kd;
-        this.kg = kg;
-        this.a = a;
+    constructor(ambientColor, diffuseColor, specularColor, shininess) {
+        this.ka = ambientColor;     // Ambient coefficient
+        this.kd = diffuseColor;     // Diffuse coefficient  
+        this.kg = specularColor;    // Specular coefficient
+        this.a = shininess;         // Shininess exponent
     }
 }

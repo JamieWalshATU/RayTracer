@@ -1,7 +1,7 @@
 class Light {
-    constructor(location, diffuseInten, specInten) {
-        this.location = location;
-        this.diffuseInten = diffuseInten;
-        this.specInten = specInten;
+    constructor(position, diffuseIntensity, specularIntensity) {
+        this.location = position;
+        this.diffuseInten = diffuseIntensity;
+        this.specInten = specularIntensity;
     }
 }
